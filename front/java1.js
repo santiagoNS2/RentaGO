@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const contrasena = document.getElementById("contrasena").value;
 
       async function checkUsers() {
-        for (let id = 1; id <= 100; id++) {
+        for (let id = 1; id <= 50; id++) {
           try {
             const response = await fetch(`http://localhost:3000/posts/${id}`);
             if (!response.ok) {
