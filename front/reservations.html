@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentaGO - Reserva de autos</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #f15626;
+      color: white;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 20px 0;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card button {
+      background-color: #3c6ef7;
+      border: none;
+      color: white;
+      cursor: pointer;
+      padding: 10px 20px;
+      text-align: center;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+
+    .card button:hover {
+      background-color: #45a049;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #ca77eb;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a RentaGO</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="images/car1.jpg" alt="Auto 1">
+      <button>Reservar</button>
+    </div>
+    <div class="card">
+      <img src="images/car2.jpg" alt="Auto 2">
+      <button>Reservar</button>
+    </div>
+    <div class="card">
+      <img src="images/car3.jpg" alt="Auto 3">
+      <button>Reservar</button>
+    </div>
+    <div class="card">
+      <img src="images/car4.jpg" alt="Auto 4">
+      <button>Reservar</button>
+    </div>
+    <!-- Añadir más autos según sea necesario -->
+  </div>
+
+  <footer>
+    <p>&copy; 2024 RentaGO. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

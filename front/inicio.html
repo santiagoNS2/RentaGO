@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentaGO - Reserva de autos</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="java1.js" defer></script> 
+  <script src="java.js" defer></script> 
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <img src="images/mcqueen.gif" alt="Autos de alquiler">
+      <h1>RentaGO - Tu auto ideal para tu viaje perfecto</h1>
+    </div>
+    
+    <div class="registro">
+      <h2>Inicia sesión para reservar </h2>
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" required>
+      <button type="submit">Iniciar sesión</button>
+      <button type="submit" id="registerButton">Registrarse</button>
+    </div>
+  </header>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modal-message" class="modal-message"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 RentaGO. Todos los derechos reservados.Desarrollado por santiago.naranjo1@udea.edu.co</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentaGO - Reserva de autos</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="java.js" defer></script>
+  <style>
+    /* Estilos para el modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-message {
+      color: green;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <img src="images/mcqueen.jpeg" alt="Autos de alquiler">
+      <h1>RentaGO - Tu auto ideal para tu viaje perfecto</h1>
+    </div>
+
+    <div class="registro">
+      <h1>Registrate para continuar</h1>
+      <form id="comentarioForm">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <br />
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required />
+        <br />
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required />
+        <br />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modal-message" class="modal-message"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 RentaGO. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
